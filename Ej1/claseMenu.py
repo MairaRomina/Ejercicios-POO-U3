@@ -7,14 +7,12 @@ class Menu:
         self.__switcher = {
             '1': self.opcion1,
             '2': self.opcion2,
-            '3': self.opcion3,
-            '4': self.opcion4,
-            '5': self.salir
+            '3': self.salir
         }
 
     def opcion (self, op, objetoLista):
         func = self.__switcher.get( op, lambda: print('Opcion no valida') )
-        if op == '1' or op == '2' or op == '3' or op == '4':
+        if op == '1' or op == '2':
             func( objetoLista )
         else:
             func()
