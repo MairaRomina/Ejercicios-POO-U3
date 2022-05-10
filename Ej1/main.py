@@ -3,6 +3,8 @@ from claseMenu import Menu
 
 if __name__ == '__main__':
     lista = Manejador()
+    lista.test()
+    print( lista )
 
     menu = Menu()
     
