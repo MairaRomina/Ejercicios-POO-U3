@@ -17,4 +17,4 @@ if __name__ == '__main__':
         
         op = input('Opcion: ')
         salir = menu.opcion( op, lista )
-        print( lista )
+        #print( lista )
