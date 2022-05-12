@@ -19,15 +19,17 @@ class Menu:
 
     def opcion1 (self, objetoLista):  
         if type( objetoLista ) == Manejador:
-            print('************************* Actualizacion *************************')
-            objetoLista.actualizar()
+            print('************************* Facultad *************************')
+            ide = int(input('Ingrese el id de la facultad: '))
+            objetoLista.mostrar( ide )
         else:
             print('Error de tipo en menu')
         
     def opcion2 (self, objetoLista): 
         if type( objetoLista ) == Manejador:
-            print('************************* Mostrar valor de cuota inferior al ingresado *************************')
-            objetoLista.mostrarValor()
+            print('************************* Carreras *************************')
+            nom = input('Ingrese el nombre de una carrera: ')
+            objetoLista.listarCarreras( nom )
         else:
             print('Error de tipo en menu')
         
