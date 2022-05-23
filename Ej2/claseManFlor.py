@@ -1,4 +1,6 @@
 import csv
+
+from pexpect import which
 from claseFlor import Flor
 import numpy as np
 
@@ -42,6 +44,19 @@ class ManejadorF:
 
     def getArreglo( self ):
         return self.__arreglo
+
+    def getCantidad (self):
+        return self.__cantidad
     
-    def getNombre (self, ind):
+    def getObjeto (self, ind):
         return self.__arreglo[ind]
+
+    def buscaFlor (self, num): #busca el numero de flor y devuelve el objeto buscado
+        i = 0
+        bandera = True
+        while bandera and i < self.__cantidad:
+            if num == self.__arreglo[i].getId():
+                bandera = not bandera
+            else:
+                i += 1
+        return self.__arreglo[i]
