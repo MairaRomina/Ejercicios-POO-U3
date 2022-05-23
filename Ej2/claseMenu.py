@@ -22,17 +22,17 @@ class Menu:
     def opcion1 (self, objetoLista, objetoArreglo):  
         if isinstance( objetoLista, ManejadorR) and isinstance( objetoArreglo, ManejadorF ):
             print('************************* Registrar venta *************************')
-            arre = objetoArreglo.getArreglo()
-            #objetoArreglo.mostrar()
-            objetoLista.registraVenta( arre )
+            print('Ingrese el tamaño del ramo: 1 Ramo chico 4 Ramo mediano 6 RAmo mediano')
+            opcion = int(input('Opcion: '))
+            objetoLista.registraVenta( opcion, objetoArreglo )
         else:
             print('Error de tipo en menu')
         
     def opcion2 (self, objetoLista, objetoArreglo): 
         if isinstance( objetoLista, ManejadorR) and isinstance( objetoArreglo, ManejadorF ):
-            print('************************* Carreras *************************')
-            nom = input('Ingrese el nombre de una carrera: ')
-            objetoLista.listarCarreras( nom )
+            """ 2. Mostrar el nombre de las 5 flores  más pedidas en un ramo, considerando todos los ramos vendidos. """
+            print('************************* Mostrar el nombre de las 5 flores  más pedidas en un ramo *************************')
+            objetoLista.listar( objetoArreglo )
         else:
             print('Error de tipo en menu')
 
