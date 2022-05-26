@@ -21,7 +21,11 @@ class Flor:
     
     def getColor (self):
         return self.__color
+    
+    def getNumero (self):
+        return self.__numero
 
+    
     
 
     
