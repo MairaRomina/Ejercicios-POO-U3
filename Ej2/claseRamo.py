@@ -21,5 +21,9 @@ class Ramo:
     def getListaRamo (self):
         return self.__lista 
 
+    def getTamaño (self):
+        return self.__tamaño
+
+    
     
     
