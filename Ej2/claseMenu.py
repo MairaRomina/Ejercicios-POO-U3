@@ -32,15 +32,16 @@ class Menu:
         if isinstance( objetoLista, ManejadorR) and isinstance( objetoArreglo, ManejadorF ):
             """ 2. Mostrar el nombre de las 5 flores  más pedidas en un ramo, considerando todos los ramos vendidos. """
             print('************************* Mostrar el nombre de las 5 flores  más pedidas en un ramo *************************')
-            objetoLista.listar( objetoArreglo )
+            objetoLista.masPedidas( objetoArreglo )
         else:
             print('Error de tipo en menu')
 
     def opcion3 (self, objetoLista, objetoArreglo): 
-        if isinstance( objetoLista ) == ManejadorR and isinstance( objetoArreglo ) == ManejadorF:
+        if isinstance( objetoLista, ManejadorR) and isinstance( objetoArreglo, ManejadorF ):
             print('************************* Carreras *************************')
-            nom = input('Ingrese el nombre de una carrera: ')
-            objetoLista.listarCarreras( nom )
+            print('Ingrese el tamaño del ramo: chico mediano grande')
+            opcion = input('Opcion: ')
+            objetoLista.masVendidas( opcion )
         else:
             print('Error de tipo en menu')   
 
