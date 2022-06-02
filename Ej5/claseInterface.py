@@ -1,4 +1,6 @@
-class Interface ( Interface ):
+from zope.interface import Interface
+
+class claseInterface ( Interface ):
 
     def insertarElemento (elemento, pos):
         pass
