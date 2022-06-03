@@ -1,0 +1,46 @@
+{
+    "__class__": "Lista",
+    "Nodos": [
+        {
+            "__class__": "Lavarropa",
+            "__atributos__": {
+                "marca": "Drean",
+                "modelo": "TL20",
+                "precioBase": 240000,
+                "color": "Blanco",
+                "paisFabricacion": "Arg",
+                "capacidadLavado": 5,
+                "velocidadCentrifugado": "5000rpm",
+                "cantidadProgramas": "10",
+                "tipoCarga": "Superior"
+            }
+        },
+        {
+            "__class__": "Heladera",
+            "__atributos__": {
+                "marca": "GAFA",
+                "modelo": "HGF357AFP",
+                "precioBase": 75499,
+                "color": "Gris Grafito",
+                "paisFabricacion": "Argentina",
+                "capacidad": "287",
+                "frezzer": "Si",
+                "ciclica": "Si"
+            }
+        },
+        {
+            "__class__": "Televisor",
+            "__atributos__": {
+                "marca": "SAMSUNG",
+                "modelo": "T4300",
+                "precioBase": 100000,
+                "color": "Negro",
+                "paisFabricacion": "Argentina",
+                "tipoPantalla": "LED",
+                "pulgadas": "32",
+                "tipoDefinicion": "HD",
+                "conexionInternet": "Si"
+            }
+        }
+    ]
+}
